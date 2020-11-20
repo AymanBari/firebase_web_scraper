@@ -22,8 +22,8 @@ This script will produce a table with the following structure, for each day that
 ## Required Libraries 
 ```python
 import mysql.connector  # Access DB 
-from selenium   # Browser automation (accessing required pages) 
-from bs4        # Scrape   
+import selenium   # Browser automation (accessing required pages) 
+import bs4        # Scrape   
 import openpyxl # Store scraped data in an excel sheet 
 import datetime # Log record dates 
 import time     # Record script runtime 
