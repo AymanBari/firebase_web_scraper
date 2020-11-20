@@ -78,8 +78,6 @@ get_logged_events()
 ```
 If ```check_for_logged_activities()``` returns True, this function returns a list of the events that have been logged. 
 
-and compares eith a list of required events (assuming not all logged events need to be scraped - comparison is made against a global dictionary with event names, and corresponding URLs as key:value pairs). Returns a list of 
-
 
 ```python 
 check_if_logged_events_are_required(logged_events, user_id)
