@@ -100,6 +100,23 @@ def sign_in_to_firebase():
     next_button.click()
 
 
+def access_events_page_for_user(user_id):
+    print("access_events_page_for_user")
+
+    all_events_url = event_page_urls['all_events']
+    print(all_events_url)
+
+	# Edit as required to isolate user_id parameter in URL 
+	first_half = all_events_url[:100] 
+	second_half = all_events_url[103:]
+	
+	user = str(user_id)
+	all_events_url = first_half + user + second_half
+	print(all_events_url)
+	driver.get(all_events_url)
+	time.sleep(2)
+
+
 def set_url_for_current_user_id(event, user_id):
     print('set_url_for_current_user_id')
     
