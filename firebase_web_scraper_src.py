@@ -303,7 +303,7 @@ def get_list_of_all_frames_on_page():
     number_of_iframes = len(iframes)
     while number_of_iframes != 5:
         iframes = driver.find_elements_by_tag_name("iframe")
-        if len(iframes) == 5:  # This should not be needed... but it doesn't work without it
+        if len(iframes) == 5: 
             break
         else:
             time.sleep(1)
